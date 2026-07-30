@@ -1,4 +1,4 @@
-transcation=[
+transcations=[
   ("101","Deposit",5000),
   ("102","Deposit",15000),
   ("103","Withdrawal",2000),
@@ -7,7 +7,7 @@ transcation=[
 ]
 balance={}
 dep=wd=0
-for accc,t,amt in transcations:
+for acc,t,amt in transcations:
   balance.setdefault(acc, 0)
   if t == "Deposit":
     balance[acc] += amt
